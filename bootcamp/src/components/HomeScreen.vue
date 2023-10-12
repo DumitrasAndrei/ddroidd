@@ -34,7 +34,6 @@ function refreshPage(){
         </button>
       </div>
     </div>
-
     <div class="home-screen__content">
       <div class="home-screen__content-img-container" v-if="!showForm">
         <img src="../assets/img/destructuring.svg" />
@@ -47,7 +46,6 @@ function refreshPage(){
         </button>
       </div>
     </div>
-
     <div class="home-screen__footer">
       <h2 class="home-screen__footer-text">
         Come to the dark side... we have <img src="../assets/img/cookies.svg" />

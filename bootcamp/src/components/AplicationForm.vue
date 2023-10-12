@@ -91,11 +91,6 @@ const submitForm = () => {
   }
 }
 
-// const hideSummary = () => {
-//   showingSummary.value = false
-//   showForm.value = true
-// }
-
 const fetchStates = async () => {
   try {
     const response = await fetch('https://countriesnow.space/api/v0.1/countries/states')
@@ -313,10 +308,8 @@ onMounted(async () => {
           Join Us
         </button>
       </div>
-      
     </form>
   </div>
-  <!-- Summary section, initially hidden -->
   <div v-if="showingSummary">
     <h1 class="aplication-form__title">
       Excellent!
@@ -339,7 +332,6 @@ onMounted(async () => {
         <li v-if="state">State: {{ state }}</li>
         <li>City: {{ city }}</li>
       </ul>
-      <!-- <button @click="hideSummary" class="aplication-form__button">Edit</button> -->
     </div>
   </div>
 </template>
@@ -349,6 +341,7 @@ onMounted(async () => {
   width: 1374px;
   flex-shrink: 0;
 }
+
 .aplication-form__title {
   color: var(--prussian-blue);
   font-size: 28px;
