@@ -8,18 +8,14 @@ function toggleForm() {
   showForm.value = true
 }
 
-function closeForm() {
-  showForm.value = false
-}
-
 function refreshPage(){
   window.location.reload()
 }
 </script>
 
 <template>
-  <section class="home-screen" @keydown.esc="closeForm">
-    <div class="home-screen__header">
+  <section class="home-screen">
+    <div class="home-screen__header" >
       <div>
         <img src="../assets/img/ddroidd_logo.svg"  @click="refreshPage"/>
       </div>
@@ -29,7 +25,7 @@ function refreshPage(){
         </h1>
       </div>
       <div>
-        <button class="home-screen__button" @click="toggleForm">
+        <button class="home-screen__button" @click="toggleForm" v-if="!showForm">
           Join Us
         </button>
       </div>
