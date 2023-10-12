@@ -1,0 +1,43 @@
+@import './styles/base.css';
+
+/*** Please replace the example styling rules below with your own styling rules ***/
+body {
+  height: 100vh;
+}
+
+input {
+  width: 394px;
+  height: 24px;
+  border: 1px solid #003c55;
+  background: #fff;
+  box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+label {
+  color: #003c55;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+input::placeholder {
+  color: #e2e2e2;
+  font-size: 16px;
+}
+
+select {
+  width: 233px;
+  height: 24px;
+  flex-shrink: 0;
+  border: 1px solid #003c55;
+  background: #fff;
+  box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #003C55;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #e6c600;
+  cursor: pointer;
+}
